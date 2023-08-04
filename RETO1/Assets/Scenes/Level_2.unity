@@ -393,7 +393,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e44fa140cda70043bcdf0e65a304668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneID: 0
 --- !u!114 &136007544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3062,6 +3061,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b292326ff370dc41bc3f070a3293e8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  var: 0
 --- !u!1 &772542767
 GameObject:
   m_ObjectHideFlags: 0
@@ -14565,7 +14565,7 @@ GameObject:
   - component: {fileID: 1632799983}
   - component: {fileID: 1632799982}
   - component: {fileID: 1632799981}
-  - component: {fileID: 1632799980}
+  - component: {fileID: 1632799985}
   m_Layer: 5
   m_Name: "Men\xFA"
   m_TagString: Untagged
@@ -14594,19 +14594,6 @@ RectTransform:
   m_AnchoredPosition: {x: 6, y: -14.9999695}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1632799980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1632799978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e44fa140cda70043bcdf0e65a304668, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneID: 0
 --- !u!82 &1632799981
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14759,28 +14746,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1632799980}
-        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: ChangeSceneID
-        m_Mode: 1
+      - m_Target: {fileID: 1632799985}
+        m_TargetAssemblyTypeName: CambiadorDeEscena, Assembly-CSharp
+        m_MethodName: CambiarEscena
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1632799980}
-        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: loadScene
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Menu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1632799983
@@ -14821,6 +14796,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1632799978}
   m_CullTransparentMesh: 1
+--- !u!114 &1632799985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632799978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8e59e1fd7062cd468c469c396a17f7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1643137404
 PrefabInstance:
   m_ObjectHideFlags: 0

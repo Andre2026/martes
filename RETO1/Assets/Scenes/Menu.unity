@@ -713,7 +713,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 129.99994, y: 67.99997}
+  m_AnchoredPosition: {x: 130, y: 68}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &108949925
@@ -12040,7 +12040,7 @@ GameObject:
   - component: {fileID: 1156257972}
   - component: {fileID: 1156257971}
   - component: {fileID: 1156257970}
-  - component: {fileID: 1156257969}
+  - component: {fileID: 1156257974}
   m_Layer: 5
   m_Name: Play_Boton
   m_TagString: Untagged
@@ -12069,19 +12069,6 @@ RectTransform:
   m_AnchoredPosition: {x: 2.0991, y: 26.2}
   m_SizeDelta: {x: 222.8392, y: 41.7823}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1156257969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1156257967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e44fa140cda70043bcdf0e65a304668, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneID: 1
 --- !u!82 &1156257970
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12234,28 +12221,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1156257969}
-        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: ChangeSceneID
-        m_Mode: 1
+      - m_Target: {fileID: 1156257974}
+        m_TargetAssemblyTypeName: CambiadorDeEscena, Assembly-CSharp
+        m_MethodName: CambiarEscena
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1156257969}
-        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: loadScene
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level_1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1156257972
@@ -12296,6 +12271,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1156257967}
   m_CullTransparentMesh: 1
+--- !u!114 &1156257974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156257967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8e59e1fd7062cd468c469c396a17f7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1166454728
 GameObject:
   m_ObjectHideFlags: 0
@@ -12418,7 +12405,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e44fa140cda70043bcdf0e65a304668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneID: 2
 --- !u!82 &1209466060
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14477,7 +14463,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e44fa140cda70043bcdf0e65a304668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneID: 1
 --- !u!82 &1533022700
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15580,7 +15565,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e44fa140cda70043bcdf0e65a304668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneID: 3
 --- !u!82 &1652498329
 AudioSource:
   m_ObjectHideFlags: 0
