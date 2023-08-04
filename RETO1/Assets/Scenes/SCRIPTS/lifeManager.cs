@@ -8,6 +8,9 @@ using UnityEngine.UI;
 public class lifeManager : MonoBehaviour
 {
     public static int lifes = 4;
+    Scene scene;
+    public int var;
+
     void Start()
     {
         lifes = 4;   
@@ -48,6 +51,15 @@ public class lifeManager : MonoBehaviour
             gameObject.transform.GetChild(3).gameObject.SetActive(true);
             gameObject.transform.GetChild(4).gameObject.SetActive(true);
             gameObject.transform.GetChild(5).gameObject.SetActive(true);
+            
+            // obtiene la escena activa
+            scene = SceneManager.GetActiveScene();
+            //variable para guardar la posicion de la escena
+            var = scene.buildIndex;
+            //paso parametro a la clase y el metodo
+            ChangeScene.tagScene = var;
+
+            //carga de escena game over
             SceneManager.LoadScene(6);
         }
     }

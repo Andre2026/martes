@@ -6,11 +6,14 @@ using UnityEngine.SceneManagement;
 public class ChangeScene : MonoBehaviour
 {
     public static int tagScene;
-    public int sceneID;
-    public void ChangeSceneID()
+
+
+    void Update()
     {
-        tagScene = sceneID;
-    }
+;
+        }
+
+
     public void loadScene()
     {
         SceneManager.LoadScene(tagScene);

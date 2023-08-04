@@ -24,6 +24,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Creditos.unity
     guid: b8b946469e188de4a802fe2333e51f24
   - enabled: 1
-    path: Assets/Scenes/YOU_LOST.unity
+    path: Assets/Scenes/YOULOST.unity
     guid: c8d8afb93b0776c46b8fa8467e0176d5
   m_configObjects: {}
