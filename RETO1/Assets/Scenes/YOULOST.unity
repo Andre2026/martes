@@ -765,7 +765,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e44fa140cda70043bcdf0e65a304668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneID: 5
 --- !u!1 &58234164
 GameObject:
   m_ObjectHideFlags: 0
@@ -1117,9 +1116,9 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 103688085}
-        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: ChangeSceneID
-        m_Mode: 1
+        m_TargetAssemblyTypeName: UnityEngine.Component, UnityEngine
+        m_MethodName: SendMessage
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1128,9 +1127,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 103688085}
+      - m_Target: {fileID: 103688079}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: loadScene
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1283,10 +1282,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 103688079}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e44fa140cda70043bcdf0e65a304668, type: 3}
+  m_Script: {fileID: 11500000, guid: 6d994161b93b87f4d8d1db6ee1366e1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneID: 0
 --- !u!1 &136808065
 GameObject:
   m_ObjectHideFlags: 0
@@ -7508,7 +7506,7 @@ GameObject:
   - component: {fileID: 2029638306}
   - component: {fileID: 2029638305}
   - component: {fileID: 2029638304}
-  - component: {fileID: 2029638303}
+  - component: {fileID: 2029638308}
   m_Layer: 5
   m_Name: REPLAY
   m_TagString: Untagged
@@ -7537,19 +7535,6 @@ RectTransform:
   m_AnchoredPosition: {x: 6.2999716, y: -21.097216}
   m_SizeDelta: {x: 140.4589, y: 26.3361}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2029638303
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2029638301}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e44fa140cda70043bcdf0e65a304668, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneID: 1
 --- !u!82 &2029638304
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7702,9 +7687,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2029638303}
+      - m_Target: {fileID: 2029638308}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: ChangeSceneID
+        m_MethodName: loadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7714,9 +7699,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2029638303}
+      - m_Target: {fileID: 2029638301}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: loadScene
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7764,6 +7749,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2029638301}
   m_CullTransparentMesh: 1
+--- !u!114 &2029638308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029638301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e44fa140cda70043bcdf0e65a304668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2035805025
 GameObject:
   m_ObjectHideFlags: 0
